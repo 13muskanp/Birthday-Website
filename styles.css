@@ -1,0 +1,128 @@
+body {
+  background-color: rgb(0,0,0);
+}
+
+.bd-canvas {
+  display:block
+}
+
+.bd-heading {
+  margin-top: 20px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  
+}
+
+.björn {
+  text-align: center;
+  color: white;
+}
+
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%;
+  width: 260px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* Style page content */
+.main {
+  margin-left: 260px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* octupus fact*/
+.platz {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+hr {
+  background: gray;
+}
+
+/*timer*/
+h1 {
+  color: white;
+}
+
+li {
+  color: white;
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.time span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+
+/*you are an octupus*/
+.quadrate .quadrat {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 30px;
+  padding: 0;
+}
+
+.quadrate .quadrat .style {
+  width: 100%;
+  border-radius: 10px;/*abgerundete ecken*/
+  padding: 35% 15px;/*wichtig*/
+  font-size: 1.2em;
+  color: #fff;
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: #DD6031;
+  position: absolute;
+}
+
+.back {
+  background: #D9DD92;
+  transform: rotateY(-90deg);
+}
+
+li:hover .front {
+  animation: flip 0.2s ease-in forwards;
+}
+
+li:hover .back {
+  animation: flip 0.2s 0.2s ease-out forwards reverse;
+}
+
+@keyframes flip {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(-90deg); }
+}

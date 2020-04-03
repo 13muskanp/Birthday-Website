@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Björns persönliche Geburtstagsseite</title>
+
+  <!-- CSS for Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Own CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Icon of page -->
+  <link rel="shortcut icon" href="img/favicon.png">
+
+</head>
+
+<body>
+
+  <!-- The moving tiles -->
+  <div class="sidenav" id="wanderRoom">
+    <img src="img/favicon.png" class="wanderer" style="position:relative;" align="left" />
+    <img src="img/favicon.png" class="wanderer" style="position:relative;" align="left" />
+    <img src="img/favicon.png" class="wanderer" style="position:relative;" align="left" />
+    <img src="img/favicon.png" class="wanderer" style="position:relative;" align="left" />
+    <img src="img/lutsch.png" class="wanderer" style="position:relative;" align="left" />
+    <img src="img/lutsch.png" class="wanderer" style="position:relative;" align="left" />
+    <img src="img/lutsch.png" class="wanderer" style="position:relative;;" align="left" />
+    <img src="img/lutsch.png" class="wanderer" style="position:relative;" align="left" />
+    <img src="img/ilmano.png" class="wanderer" style="position:relative;" align="left" />
+    <img src="img/ilmano.png" class="wanderer" style="position:relative;" align="left" />
+    <img src="img/ilmano.png" class="wanderer" style="position:relative;" align="left" />
+    <img src="img/ilmano.png" class="wanderer" style="position:relative;" align="left" />
+
+    <!-- Mario -->
+    <img src="img/mario.png" id="mario" onClick="playMario()" style="position:relative;" />
+  </div>
+
+
+  <div class="main">
+    <div class="container">
+      <div class="row" height="300">
+        <div class="col-12" height="300">
+          <h1 class="bd-heading">Happy Birthday</h1>
+          <canvas class="bd-canvas" id="birthday"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img class="img-fluid" src="https://media.giphy.com/media/xUA7bfh0vgtmNlm4a4/giphy.gif" alt="">
+        </div>
+        <div class="col-4">
+          <h3 class="text-light text-center">
+            Herzlichen Glückwunsch Björn!<br>
+            Hier sind Tropes eines Björn:<br>
+            kalkuliert, logisch, comedygod-isch, verlässlich, zuvorkommend, nerdy, ehrlich
+          </h3>
+        </div>
+        <div class="col-4">
+          <img class="img-fluid" src="https://media.giphy.com/media/3o7btZjaYxqkGyOYA8/giphy.gif" alt="">
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- octupus fact -->
+
+
+    <div class="container platz">
+      <hr>
+      <div class="row text-light">
+        <div class="col-2 offset-1">
+          <img class="img-fluid rounded" src="https://media.giphy.com/media/WwMHQqMG0yirepFPP8/giphy.gif" alt="">
+        </div>
+        <div class="col-8" id="facts"></div>
+      </div>
+      <hr>
+    </div>
+    <br>
+
+
+
+
+    <!-- Some animated GIFs -->
+    <div class="container container-fluid">
+      <div class="row no-gutters">
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/J5GhsPx9UnxOXOIWJa/giphy.gif" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/ftf6IE6ZiBWiPcMvMK/giphy.gif" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/J5GhsPx9UnxOXOIWJa/giphy.gif" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/ftf6IE6ZiBWiPcMvMK/giphy.gif" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/J5GhsPx9UnxOXOIWJa/giphy.gif" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/ftf6IE6ZiBWiPcMvMK/giphy.gif" alt="">
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/ftf6IE6ZiBWiPcMvMK/giphy.gif" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/J5GhsPx9UnxOXOIWJa/giphy.gif" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/ftf6IE6ZiBWiPcMvMK/giphy.gif" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/J5GhsPx9UnxOXOIWJa/giphy.gif" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/ftf6IE6ZiBWiPcMvMK/giphy.gif" alt="">
+        </div>
+        <div class="col">
+          <img class="img-fluid" src="https://media.giphy.com/media/J5GhsPx9UnxOXOIWJa/giphy.gif" alt="">
+        </div>
+      </div>
+
+      <!-- First row of telegram Stickers -->
+      <div class="row">
+        <div class="col-4">
+          <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-post="AnimatedStickers/375"
+            data-width="100%"></script>
+        </div>
+        <div class="col-4">
+          <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-post="AnimatedStickers/317"
+            data-width="100%"></script>
+        </div>
+        <div class="col-4">
+          <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-post="AnimatedStickers/266"
+            data-width="100%"></script>
+        </div>
+      </div>
+
+      <!--timer-->
+      <div class="container platz text-center">
+        <div class="row">
+          <div class="col-12">
+            <h1 id="head">Countdown to next birthday:</h1>
+            <ul>
+              <li class="time"><span id="days"></span>days</li>
+              <li class="time"><span id="hours"></span>Hours</li>
+              <li class="time"><span id="minutes"></span>Minutes</li>
+              <li class="time"><span id="seconds"></span>Seconds</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--your are an octupus-->
+      <div class="container">
+        <div class="row quadrate">
+          <div class="col-2">
+            <li class="quadrat">
+              <div class=" style front">You are</div>
+              <div class=" style back">an octupus</div>
+            </li>
+          </div>
+          <div class="col-2">
+            <li class="quadrat">
+              <div class=" style front">You are</div>
+              <div class=" style back">an octupus</div>
+            </li>
+          </div>
+          <div class="col-2">
+            <li class="quadrat">
+              <div class="style front">You are</div>
+              <div class=" style back">an octupus</div>
+            </li>
+          </div>
+          <div class="col-2">
+            <li class="quadrat">
+              <div class=" style front">You are</div>
+              <div class=" style back">an octupus</div>
+            </li>
+          </div>
+          <div class="col-2">
+            <li class="quadrat">
+              <div class=" style front">You are</div>
+              <div onmouseover="playEntertain()" class=" style back">an entertai<br>ner</div>
+            </li>
+          </div>
+          <div class="col-2">
+            <li class="quadrat">
+              <div class=" style front">You are</div>
+              <div class=" style back">an octupus</div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second row of telegram Stickers -->
+    <div class="row">
+      <div class="col-4">
+        <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-post="AnimatedStickers/98"
+          data-width="100%"></script>
+      </div>
+      <div class="col-4">
+        <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-post="AnimatedStickers/399"
+          data-width="100%"></script>
+      </div>
+      <div class="col-4">
+        <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-post="AnimatedStickers/397"
+          data-width="100%"></script>
+      </div>
+    </div>
+
+    <!-- Js for JQuery, Popper.js and Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+
+    <script src="fireworks.js"></script>
+    <script src="functions.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -105,6 +105,11 @@ let questions = [
         correct : "yash"
     },
 {
+    question : "What does JS stand for?",
+    imgSrc : "img/z.jpg",
+    correct : "muskan"
+},
+{
         question : "What does JS stand for?",
         imgSrc : "img/s.jpg",
         correct : "atharva"

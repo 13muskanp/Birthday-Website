@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title>Björns persönliche Geburtstagsseite</title>
+  <title>Anmol Kohli</title>
 
   <!-- CSS for Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <!-- Own CSS -->
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Icon of page -->
-  <link rel="shortcut icon" href="img/favicon.png">
 
 </head>
 
@@ -53,34 +49,20 @@
         </div>
         <div class="col-4">
           <h3 class="text-light text-center">
-            Herzlichen Glückwunsch Björn!<br>
-            Hier sind Tropes eines Björn:<br>
-            kalkuliert, logisch, comedygod-isch, verlässlich, zuvorkommend, nerdy, ehrlich
+            Happy Birthday Anmol
           </h3>
+          <div id="container">
+            <div id="start">Enter Quiz</div>
+            <a role="button" href="./ques.html">Enter </a>
+            
         </div>
+    </div>
         <div class="col-4">
           <img class="img-fluid" src="https://media.giphy.com/media/3o7btZjaYxqkGyOYA8/giphy.gif" alt="">
         </div>
       </div>
     </div>
     <br>
-    <!-- octupus fact -->
-
-
-    <div class="container platz">
-      <hr>
-      <div class="row text-light">
-        <div class="col-2 offset-1">
-          <img class="img-fluid rounded" src="https://media.giphy.com/media/WwMHQqMG0yirepFPP8/giphy.gif" alt="">
-        </div>
-        <div class="col-8" id="facts"></div>
-      </div>
-      <hr>
-    </div>
-    <br>
-
-
-
 
     <!-- Some animated GIFs -->
     <div class="container container-fluid">
@@ -125,7 +107,7 @@
         </div>
       </div>
 
-      <!-- First row of telegram Stickers -->
+  
       <div class="row">
         <div class="col-4">
           <script async src="https://telegram.org/js/telegram-widget.js?7" data-telegram-post="AnimatedStickers/375"
@@ -164,37 +146,37 @@
           <div class="col-2">
             <li class="quadrat">
               <div class=" style front">You are</div>
-              <div class=" style back">an octupus</div>
+              <div class=" style back">Motu</div>
             </li>
           </div>
           <div class="col-2">
             <li class="quadrat">
               <div class=" style front">You are</div>
-              <div class=" style back">an octupus</div>
+              <div class=" style back">Motu</div>
             </li>
           </div>
           <div class="col-2">
             <li class="quadrat">
               <div class="style front">You are</div>
-              <div class=" style back">an octupus</div>
+              <div class=" style back">Motu</div>
             </li>
           </div>
           <div class="col-2">
             <li class="quadrat">
               <div class=" style front">You are</div>
-              <div class=" style back">an octupus</div>
+              <div class=" style back">Motu</div>
             </li>
           </div>
           <div class="col-2">
             <li class="quadrat">
               <div class=" style front">You are</div>
-              <div onmouseover="playEntertain()" class=" style back">an entertai<br>ner</div>
+              <div onmouseover="playEntertain()" class=" style back">Atharva's<br>bf</div>
             </li>
           </div>
           <div class="col-2">
             <li class="quadrat">
               <div class=" style front">You are</div>
-              <div class=" style back">an octupus</div>
+              <div class=" style back">Motu</div>
             </li>
           </div>
         </div>
@@ -230,6 +212,68 @@
 
     <script src="fireworks.js"></script>
     <script src="functions.js" charset="utf-8"></script>
+    <script src="quiz.js"></script>
+    <script src="http://sibeeshpassion.com/content/scripts/jquery-1.11.1.min.js"></script>
+<script>  
+document.onkeypress = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+document.onmousedown = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+document.onkeydown = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+</script> 
+     <script language="JavaScript">
+
+       window.onload = function () {
+           document.addEventListener("contextmenu", function (e) {
+               e.preventDefault();
+           }, false);
+           document.addEventListener("keydown", function (e) {
+               //document.onkeydown = function(e) {
+               // "I" key
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                   disabledEvent(e);
+               }
+               // "J" key
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                   disabledEvent(e);
+               }
+               // "S" key + macOS
+               if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                   disabledEvent(e);
+               }
+               // "U" key
+               if (e.ctrlKey && e.keyCode == 85) {
+                   disabledEvent(e);
+               }
+               // "F12" key
+               if (event.keyCode == 123) {
+                   disabledEvent(e);
+               }
+           }, false);
+           function disabledEvent(e) {
+               if (e.stopPropagation) {
+                   e.stopPropagation();
+               } else if (window.event) {
+                   window.event.cancelBubble = true;
+               }
+               e.preventDefault();
+               return false;
+           }
+       }
+</script>
 </body>
 
 </html>

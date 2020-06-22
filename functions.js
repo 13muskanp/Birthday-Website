@@ -1,12 +1,5 @@
 let FACTS = [
-  "Octopuses are green sometimes.",
-  "Hello World!",
-  "The giant Pacific octopus (Enteroctopus dofleini) is the largest octopus. " +
-  "They typically grow to 5 meters long and weight around 50 kg," +
-  " but one was recorded to weigh more than 272 kg and measure 9.1 m across, according to National Geographic.",
-  "The smallest octopus is the Octopus wolfi. It is smaller than 2.5 cm long and weighs less than a gram.",
-  "If an octopus does get caught — no problem. They can lose arms and regrow them.",
-  "The standard plural in English of octopus is octopuses, according to the Oxford English Dictionary. As a word that comes from Greek, it follows Greek rules for plurals. The word 'octopi' which follows Latin rules for plurals, is incorrect."
+  ""
 ]
 
 window.onload = onLoad;
@@ -228,7 +221,7 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-let countDown = new Date('Jan 19, 2021 00:00:00').getTime(),
+let countDown = new Date('Jun 22, 2021 00:00:00').getTime(),
   x = setInterval(function () {
 
     let now = new Date().getTime(),
@@ -238,12 +231,6 @@ let countDown = new Date('Jan 19, 2021 00:00:00').getTime(),
       document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
       document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
       document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-
-    //do something later when date is reached
-    //if (distance < 0) {
-    //  clearInterval(x);
-    //  'IT'S MY BIRTHDAY!;
-    //}
 
   }, second)
 
